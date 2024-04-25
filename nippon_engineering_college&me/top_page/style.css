@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+body{background-image:url(images/IMG_3900\ \(1\).jpg);
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+
+
+}
+
+#gnavi ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-evenly;
+	padding: 0;
+}
+
+#gnavi ul li a {
+	display: block;
+	border: solid 10px #817564;
+	border-radius: 20px;
+	padding:10px 10px;
+	text-align: center;
+	margin: 5px;
+	width: 200px;
+	line-height: 50px;	
+	background-color: #c7b7a0;
+	color: ivory;
+	text-decoration: none;
+    font-size:25px;
+	font-family:  "M PLUS Rounded 1c", sans-serif;
+}
+
+#gnavi ul li a{
+    transition: background-color 0.14s ease;
+
+}
+#gnavi ul li a:hover{
+    background-color: #817564;
+    
+}
+
+h1{
+    color:#000000;
+    background-color :#a3edf4;
+    padding:1em;
+    border:10px solid #2525b9;
+    
+    
+    font-size: 3em;
+    font-family: sanserif;
+    
+
+
+}
+
+h2{
+    color:#2525b9;
+    background-color:rgb(253, 253, 140);
+    padding:0.7rem;
+    padding-left :8px;
+    border-left: 15px solid rgba(111, 128, 0, 0.664);
+    font-size: 2em;    
+    font-family: sanserif;
+
+
+}
+
+h3{
+    color:#0505b1;
+    background-color:rgb(253, 253, 140);
+    padding-left :8px;
+    font-size: 1.5em;
+    font-family: sanserif;
+
+}
+
+h4{
+    color:#0505b1;
+    background-color:rgb(253, 230, 140);
+    padding-left :8px;
+    font-size: 1.5em;
+    font-family: sans-serif;
+
+
+}
+h3::before{content:"〇"}
+h3::after{content:"〇"}
+
+.desc{
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.7;
+    text-indent: 1em;
+    text-align: justify;
+    text-justify:inter-ideograph;
+    font-family: "M PLUS Rounded 1c";
+    
+
+}
+
+div img{
+    margin-left: 245px;
+    text-align: center;
+}
+
+
+
+
+
+header{
+    width:1240px; /* 固定値とした */
+    height:380px;
+    padding:5px 5px 5px 5px;
+    margin:5px 5px 5px 5px;
+
+}
+
+/* 日本工学院のYouTube */
+header div{
+    position: absolute;
+    top:110px;
+    left:800px;
+}
+
+
+#main_sec_1{
+    width:1240px;
+    height:680px;
+    padding:5px 5px 5px 5px;
+    margin:5px 5px 5px 5px;    
+}
+
+#main_sec_2{
+    width:calc(1240px/3*2);
+    height:100px;
+    padding:5px 5px 5px 5px;
+    margin:5px 5px 5px 5px;    
+}
+
+#main_sec_2 a{
+    transition: background-color 0.14s ease;
+
+}
+
+#main_sec_2 a:hover{
+    background-color : #a3edf4;
+
+}
+
+#main_sec_3{
+    width:calc(1240px/3*2);
+    height:380px;
+    padding:5px 5px 5px 5px;
+    margin:5px 5px 5px 5px;    
+}
+
+#main_sec_3 a{
+    transition: background-color 0.14s ease;
+
+}
+
+#main_sec_3 dl dt a:hover{
+    background-color: ivory;
+    border-radius: 10px;
+}
+
+.desc a{
+    transition: background-color 0.14s ease;
+
+}
+
+.desc a:hover{
+    background-color : rgb(218, 243, 216);
+}
+
+aside{
+    width:calc(1240px/3*1);
+    height: 502.5px;
+    padding:5px 5px 5px 5px;
+    margin:5px 5px 5px 10px;   
+    
+
+
+}
+
+
+
+footer p{
+    width: 440px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+footer iframe{
+    margin-left: 370px;
+    text-align: center;
+
+}
+
+footer{
+    width: 1240px;
+    height:450px;
+    padding:5px 5px 5px 5px;
+    margin:5px 5px 5px 5px;    
+}
+    
+
+/* Gridレイアウトをここでまとめる */
+body{
+    display:grid;
+    grid-template-columns: calc(1240px/3*1) calc(1240px/3*1) calc(1240px/3*1);
+    grid-template-rows: 380px,680px,480px,450px;
+
+}
+
+header{
+    grid-column:1/4;
+    grid-row:1/2;
+
+}
+
+main{
+    grid-column:1/4;
+    grid-row:2/4;
+
+}
+
+
+
+
+
+
+aside{
+    grid-column:3/4;
+    grid-row:3/4;
+
+
+}
+
+footer{
+    grid-column:1/4;
+    grid-row:4/5;
+
+
+}
+
+
+a:hover img{
+    opacity:0.5;
+    cursor:pointer;
+}
+
+a{
+    text-decoration:none /*default */
+} 
+
+
+a:hover{
+    text-decoration:underline
+}
+
+#main_sec_3 dl{
+    border : 5px solid #817564;
+    background-color: #ddd3c5;
+    margin-top : 38px
+
+}
+
+#main_sec_3 dt{
+    float:left;
+    clear:left;
+    margin-right :30px;
+    
+}
+
+#main_sec_3 dt, #main_sec_3 dd{
+    font-size:1.5em;
+    font-family: "M PLUS Rounded 1c";
+    
+
+    
+}
+
+aside dl{
+    border:solid 5px #817564;
+    margin-top : -15px;
+    background-color: #c7b7a0;
+    
+}
+
+aside a{
+    font-size : 1.5em;
+}
+
+
+   

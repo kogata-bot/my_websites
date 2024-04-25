@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+body{
+    background-color:rgb(216, 244, 249);
+}
+
+#gnavi ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-evenly;
+	padding: 0;
+}
+
+#gnavi ul li a {
+	display: block;
+	border: solid 10px #817564;
+	border-radius: 20px;
+	padding:10px 10px;
+	text-align: center;
+	margin: 5px;
+	width: 200px;
+	line-height: 50px;	
+	background-color: #c7b7a0;
+	color: ivory;
+	text-decoration: none;
+    font-size:25px;
+	font-family:  "M PLUS Rounded 1c", sans-serif;
+}
+
+#gnavi ul li a{
+    transition: background-color 0.14s ease;
+
+}
+#gnavi ul li a:hover{
+    background-color: #817564;
+    
+}
+h1{
+    color:#000000;
+    background-color :#a3edf4;
+    padding:1em;
+    border:10px solid #2525b9;
+    
+    font-size: 3em;
+    font-family: sanserif;
+    
+
+
+}
+
+h2{
+    color:#2525b9;
+    background-color:rgb(253, 253, 140);
+    padding:0.7rem;
+    padding-left :8px;
+    border-left: 15px solid rgba(111, 128, 0, 0.664);
+    font-size: 2em;    
+    font-family: sanserif;
+
+
+}
+
+h3{
+    color:#0505b1;
+    background-color:rgb(253, 253, 140);
+    padding-left :8px;
+    font-size: 1.5em;
+    font-family: sanserif;
+
+}
+h3::before{content:"〇"}
+h3::after{content:"〇"}
+
+
+
+
+header{
+    width:1240px; /* 固定値とした */
+    height:400px;
+    padding:5px 5px 5px 5px;
+    margin:5px 5px 5px 5px;
+}
+
+#main_sec_1{
+    width:1240px;
+    height:100px;
+    padding:5px 5px 5px 5px;
+    margin:5px 5px 5px 5px;    
+}
+
+#main_sec_2{
+    width:1240px;
+    height:600px;
+    padding:5px 5px 5px 5px;
+    margin:5px 5px 5px 5px;    
+}
+
+p img {
+    float:left;
+
+    margin-right:20px;
+    
+}
+
+
+footer p{
+    width: 440px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+footer{
+    width: 1240px;
+    height:80px;
+    padding:5px 5px 5px 5px;
+    margin:5px 5px 5px 5px;    
+}
+
+a{
+    text-decoration:none; /*default */
+} 
+
+
+a:hover{
+    text-decoration:underline;
+}
+
+table{
+    border:6px solid #817564;
+    border-collapse: collapse;
+}
+
+th{
+    border:2px solid #817564;
+    background-color: #c7b7a0;
+    padding:5px;
+}
+
+td{
+    border:2px solid #817564;
+    padding:2px;
+}
+
+caption{
+    background-color: #817564;
+    width:100px;
+    margin:auto;
+    margin-top:-10px;
+    margin-bottom: 2px;
+    color:ivory;
+
+
+}
+

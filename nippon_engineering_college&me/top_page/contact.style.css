@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+
+body{background-color:rgb(218, 243, 216);}
+
+
+h1{
+    color:#000000;
+    background-color :#a3edf4;
+    padding:1em;
+    border:10px solid #2525b9;
+    
+    font-size: 3em;
+    font-family: sanserif;
+    
+
+
+}
+
+h2{
+    color:#2525b9;
+    background-color:rgb(253, 253, 140);
+    padding:0.7rem;
+    padding-left :8px;
+    border-left: 15px solid rgba(111, 128, 0, 0.664);
+    font-size: 2em;    
+    font-family: sanserif;
+
+
+}
+
+
+
+header{
+    width:1240px; /* 固定値とした */
+    height:280px;
+    padding:5px 5px 5px 5px;
+    margin:5px 5px 5px 5px;
+}
+
+#main_sec_1{
+    width:1240px;
+    height:1380px;
+    padding:5px 5px 5px 5px;
+    margin:5px 5px 5px 5px;    
+}
+
+
+
+footer p{
+    width: 440px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+footer{
+    width: 1240px;
+    height:80px;
+    padding:5px 5px 5px 5px;
+    margin:5px 5px 5px 5px;    
+}
+
+a{
+    text-decoration:none /*default */
+} 
+
+
+a:hover{
+    text-decoration:underline
+}
+
+/* パンくずリスト */
+ol.breadcrumb{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    display:flex
+}
+
+ol.breadcrumb li::after {
+    content:">";
+    margin: 0 10px;
+
+}
+
+ol.breadcrumb li:last-child::after{
+    content:none;
+}
+
+dl{
+    width:1240px;
+    border-top:1px solid #777;
+    border-right:1px solid #777;
+    border-left:1px solid #777;
+
+
+}
+
+dl dt{
+    float:left;
+    padding: 1em;
+    color:#604f4f;
+}
+
+dl dd{
+    border-bottom: 1px solid #777;
+    margin:0;
+    padding:1em 0 1em 620px;
+}
+
+dl dt .must{
+    color:#d23939
+}
+
+input[type="email"]{
+    width:75%;
+}
+
+input{
+    font-size: 1em;
+    padding:5px;
+}
+
+label{
+    margin-right: 1em;
+}
+
+select{
+    font-size: 1em;
+}
+
+textarea{
+    width:45em;
+    padding:5px;
+    font-size: 1em;
+
+}
+
+p.button  {
+    text-align: center;
+    
+
+}
+
+p.reset {
+    text-align: center;
+   
+}
+
+
+p.submit{
+    text-align: center;
+    
+   
+}
+
+input[type="button"]{
+    padding:15px 75px;
+    background: #8d7f7f;
+    color:ivory;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+input[type="reset"]{
+    padding:15px 75px;
+    background: #c6c5c5;
+    color:ivory;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+input[type="submit"]{
+    padding:15px 75px;
+    background: #271f1f;
+    color:ivory;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.button :hover {
+    opacity:0.5;
+    cursor:pointer;
+}
+
+hr{
+    border:3px dashed #534d4d;
+}
+
+article{
+    font-family: sanserif;
+
+}
+article p{
+    border-bottom: 1px solid #777;
+    padding-top:5px
+}
+
+.sub_con{
+    background: 
+    rgb(253, 253, 140);
+    padding:0.5rem;
+    color:#2525b9;
+    font-weight: bold;
+    border:2px solid rgba(111, 128, 0, 0.664);
+
+}
